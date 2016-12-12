@@ -1,0 +1,63 @@
+.pip {
+  background-color: rgb(147, 49, 54);
+  height: 25px;
+  width: 25px;
+  display: block;
+  border-radius: 50%;
+  margin: 9px;
+  border: 1px inset rgb(97, 97, 97);
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10%;
+}
+
+[class*="-face"]{
+  flex-shrink: 0;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  color: rgb(221, 221, 221);
+  border: 4px outset rgb(73, 73, 73);
+  margin: 5px;
+  border-radius: 10px;
+  background-color: rgb(116, 141, 161);
+}
+
+.column {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.first-face{
+  justify-content: center;
+}
+
+.first-face .pip{
+  align-self: center;
+}
+
+.second-face .pip:nth-of-type(2){
+  align-self: flex-end;
+}
+
+body div:nth-child(1n+2) {
+  justify-content: space-between;
+}
+
+.third-face .pip:nth-of-type(2){
+  align-self: center;
+}
+
+.third-face .pip:nth-of-type(3){
+  align-self: flex-end;
+}
+
+
+.fifth-face .column:nth-of-type(2) {
+  justify-content: center;
+}
